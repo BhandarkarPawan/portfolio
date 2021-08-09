@@ -12,8 +12,8 @@ export default function Home({ allPostsData }) {
       {/* Add this <section> tag below the existing <section> tag */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <p>
-          Crohn's Combatant ・A sucker for strongly typed code ・ I help you
-          write beautiful Python, GraphQL & Typescript・日本語勉強中
+          Crohn's Combatant・A sucker for strongly typed code・I help you write
+          beautiful Python, GraphQL & Typescript
         </p>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
