@@ -19,10 +19,10 @@ const Home = () => {
           <h2 className="mt-4 text-xl">Pawan Bhandarkar</h2>
           <p className="mt-4">Crohn's Combatant</p>
           <p className="mt-2">
-            I’m on the road to becoming a full-stack web developer and I share
-            my findings as I go
+            Full-stack developer 🧑‍💻 Posting about Python, NextJS, Tailwind
+            and GraphQL to help YOU become a better developer 🚀 In love with
+            strongly typed code
           </p>
-          <p className="mt-4">日本語勉強中です</p>
           <hr className="border-b-1 mt-3 border-solid border-gray-500" />
           <br />
           <p className="tracking-wider text-sm"> SOCIALS</p>
