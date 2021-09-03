@@ -17,7 +17,6 @@ const Home = () => {
             width={160}
           />
           <h2 className="mt-4 text-xl">Pawan Bhandarkar</h2>
-          <p className="mt-4">Crohn's Combatant</p>
           <p className="mt-2">
             Full-stack developer 🧑‍💻 Posting about Python, NextJS, Tailwind
             and GraphQL to help YOU become a better developer 🚀 In love with

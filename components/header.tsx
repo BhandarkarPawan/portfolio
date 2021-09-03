@@ -2,22 +2,21 @@ import { useState } from 'react';
 import Image from 'next/image';
 const Header = () => {
   return (
-    <div className="flex text-white bg-primary w-full justify-between py-8 px-12">
-      <div className="flex w-1/2">
-        {/* <Image
+    <div className="flex text-black bg-red-100 w-full justify-between pt-8 pb-4">
+      <div className="flex">
+        <img
           className="rounded-full"
-          src="/images/logo.png"
+          src="/images/logo-3.png"
           alt="Pawan Bhandarkar"
-          height={100}
-          width={100}
-        /> */}
-        <h1 className="text-2xl ">The Prose Code</h1>
+          width={65}
+        />
+        <h1 className=" text-2xl ">The Prose Code</h1>
       </div>
-      <div className="flex w-1/2 justify-around">
-        <p>Home</p>
-        <p>Threads</p>
-        <p>Blog</p>
-        <p>About</p>
+      <div className="flex bg-green-100 w-1/2 font-bold justify-around tracking-wide">
+        <p>HOME</p>
+        <p>BLOG</p>
+        <p>THREADS</p>
+        <p>ABOUT</p>
       </div>
     </div>
   );

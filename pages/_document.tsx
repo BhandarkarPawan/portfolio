@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           ></link>
           <link
-            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito+Sans:wght@200&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
             rel="stylesheet"
           ></link>
         </Head>
