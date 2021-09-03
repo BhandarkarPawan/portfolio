@@ -45,6 +45,10 @@ h6 {
   @apply absolute rounded-full;
 }
 
+.outer-circle {
+  @apply flex justify-center items-center opacity-80;
+}
+
 /* Animations */
 
 #hamburger {
@@ -131,4 +135,21 @@ h6 {
   transform: rotate(-45deg);
   top: 16px;
   left: 7px;
+}
+
+.bubble {
+  animation: bubbleup 10s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bubbleup {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
