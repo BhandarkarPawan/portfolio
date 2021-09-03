@@ -11,7 +11,7 @@ const Hamburger: React.FC<Props> = (props) => {
 
   const { navActive, setNavActive } = props;
   return (
-    <button
+    <div
       className="mr-2"
       onClick={(e) => {
         setNavActive(!navActive);
@@ -25,7 +25,7 @@ const Hamburger: React.FC<Props> = (props) => {
         <span></span>
         <span></span>
       </div>
-    </button>
+    </div>
   );
 };
 
