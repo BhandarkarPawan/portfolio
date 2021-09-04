@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bold-ring {
+    border-width: 1.2em;
+  }
+  .semibold-ring {
+    border-width: 0.8em;
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -147,7 +156,7 @@ h6 {
     transform: translate(0);
   }
   50% {
-    transform: translate(-20px, -20px);
+    transform: translateY(-20px);
   }
   100% {
     transform: translate(0);
