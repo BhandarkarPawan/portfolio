@@ -1,8 +1,8 @@
-import Header from '../components/header';
+import Header from '../components/Header';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import Footer from '../components/footer';
-import Intro from '../components/intro';
+import Footer from '../components/Footer';
+import Intro from '../components/Intro';
 
 const Home = () => {
   return (

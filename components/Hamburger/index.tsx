@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import styles from './index.module.css';
 
 interface Props {
   navActive: boolean;
@@ -18,8 +19,9 @@ const Hamburger: React.FC<Props> = (props) => {
       }}
     >
       <div
-        id="hamburger"
-        className={`${className} ${navActive && 'open'} md:hidden`}
+        className={`${styles.hamburger} ${className} ${
+          navActive && styles.open
+        } md:hidden`}
       >
         <span></span>
         <span></span>
