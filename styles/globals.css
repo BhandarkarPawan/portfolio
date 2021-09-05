@@ -91,3 +91,11 @@ h6 {
     transform: translate(0px);
   }
 }
+
+.title {
+  @apply mt-4 md:text-5xl text-4xl;
+}
+
+.subtitle {
+  @apply mt-2 md:text-xl text-base tracking-wider;
+}
