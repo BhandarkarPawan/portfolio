@@ -11,22 +11,22 @@ const Intro = () => {
       relative "
     >
       <Bubble
-        color={BubbleColor.GRAY}
+        color={BubbleColor.YELLOW}
         size={BubbleSize.LARGE}
         className="md:left-12 left-8 md:top-48 top-0"
       />
       <Bubble
-        color={BubbleColor.GRAY}
+        color={BubbleColor.PINK}
         size={BubbleSize.SMALL}
         className="md:left-56 right-24 md:top-96 top-0"
       />
       <Bubble
-        color={BubbleColor.GRAY}
+        color={BubbleColor.BLUE}
         size={BubbleSize.MEDIUM}
         className="md:left-12 right-8 md:bottom-16 md:top-auto top-16"
       />
       <Bubble
-        color={BubbleColor.GRAY}
+        color={BubbleColor.PINK}
         size={BubbleSize.MEDIUM}
         className="md:right-24 right-24 md:bottom-32 top-40 
         "
@@ -38,10 +38,6 @@ const Intro = () => {
       </div>
       <div className="relative">
         <div className="z-20 bubble floating-circle left-4 lg:w-96 lg:h-96 sm:w-72 sm:h-72 h-56 w-56 bg-gray-500"></div>
-        <div className="z-30 bubble md:bold-ring floating-circle md:left-0 left-4 md:bottom-72 bottom-48 md:w-32 md:h-32 sm:w-20 sm:h-20 h-16 w-16 border-8 border-yellow-400 "></div>
-        <div className="z-30 bubble md:semibold-ring floating-circle left-4 md:bottom-56 bottom-40  md:w-12 md:h-12 h-6 w-6 border-8 border-pink-500 "></div>
-        <div className="z-30 bubble md:semibold-ring floating-circle md:left-20 left-12 md:bottom-48 bottom-32 md:w-20 md:h-20 h-10 w-10 border-8 border-blue-500 "></div>
-
         <Image
           className="z-50"
           src="/images/pawan-3.png"
