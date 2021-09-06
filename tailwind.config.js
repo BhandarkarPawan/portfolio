@@ -9,6 +9,10 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      opacity: ['hover'],
+    },
+  },
   plugins: [],
 };
