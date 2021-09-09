@@ -1,19 +1,35 @@
 import Image from 'next/image';
 import Bubble, { BubbleColor, BubbleSize } from '../Bubble';
 import * as htmlToImage from 'html-to-image';
-import { HoverImage } from '../HoverImage';
+import { HoverImage, IProject } from '../HoverImage';
+
+const ProjectList: IProject[] = [
+  {
+    name: 'Tipped',
+    github: 'https://github.com/BhandarkarPawan/tip-calculator',
+    website: 'https://tipped.netlify.app/',
+    imageName: 'Tipped.png',
+  },
+  {
+    name: 'Janken',
+    github: 'https://github.com/BhandarkarPawan/rock-paper-scissors',
+    website: 'https://janken-pawan.vercel.app',
+    imageName: 'Janken.png',
+  },
+];
 
 const Projects = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="md:h-8 md:w-64 h-5 w-48 bg-yellow-300 my-12">
+    <div className="flex bg-gray-200 lg:px-24 md:px-8 flex-col items-center justify-center">
+      <div className="md:h-8 md:w-64 h-5 w-48 bg-yellow-300 md:mb-12 mt-12 ">
         <h1 className="z-50 title md:-translate-y-10 -translate-y-9">
           My Projects
         </h1>
       </div>
-      <div className="grid md:gap-12 md:grid-cols-2 ">
-        <HoverImage src="/images/Tipped.png" height={300} width={450} />
-        <HoverImage src="/images/Janken.png" height={300} width={450} />
+      <div className="grid md:gap-24 md:grid-cols-2 mb-12">
+        {ProjectList.map((project, index) => (
+          <HoverImage project={project} height={300} width={450} />
+        ))}
       </div>
       <Bubble
         color={BubbleColor.PINK}

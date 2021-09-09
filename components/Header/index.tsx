@@ -14,6 +14,7 @@ const Header = () => {
           text-black 
           w-full 
           md:justify-between 
+          lg:px-24 md:px-8
           md:pt-8 md:pb-4"
     >
       <div
@@ -28,7 +29,7 @@ const Header = () => {
             items-center"
         >
           <Image
-            src="/images/logo-3.png"
+            src="/images/logo-2.png"
             alt="The Prose Code"
             width={72}
             height={36}

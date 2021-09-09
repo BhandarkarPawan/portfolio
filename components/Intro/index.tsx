@@ -8,6 +8,7 @@ const Intro = () => {
       className="
       md:flex 
       justify-center 
+      lg:px-24 md:px-8
       relative "
     >
       <Bubble
@@ -36,7 +37,7 @@ const Intro = () => {
         <h1 className="title">I'm Pawan</h1>
         <p className="subtitle">A Web Developer</p>
       </div>
-      <div className="relative">
+      <div className="relative flex">
         <div className="z-20 bubble floating-circle left-4 lg:w-96 lg:h-96 sm:w-72 sm:h-72 h-56 w-56 bg-gray-500"></div>
         <Image
           className="z-50"
