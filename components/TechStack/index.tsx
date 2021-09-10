@@ -107,7 +107,7 @@ const TechStack = () => {
             >
               {activeTech.name}
             </p>
-            <div className="pt-4 text-white subtitle">
+            <div className="pt-4 text-white h-48 subtitle">
               {activeTech.description}
             </div>
           </div>
