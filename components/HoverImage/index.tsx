@@ -3,12 +3,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-export interface IProject {
-  name: string;
-  github: string;
-  website: string;
-  imageName: string;
-}
+import { IProject } from '../../services/data-models';
 
 export interface Props {
   project: IProject;
