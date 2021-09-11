@@ -5,18 +5,31 @@ export interface IProject {
   imageName: string;
 }
 
-export enum ColorEnum {
-  BLUE = 'blue',
-  YELLOW = 'yellow',
-  PINK = 'pink',
-  TEAL = 'teal',
-  WHITE = 'white',
-  ORANGE = 'orange',
+export enum EColor {
+  BLUE = 'BLUE',
+  YELLOW = 'YELLOW',
+  PINK = 'PINK',
+  TEAL = 'TEAL',
+  WHITE = 'WHITE',
+  ORANGE = 'ORANGE',
+}
+
+export enum EPageName {
+  HOME = 'HOME',
+  ABOUT = 'ABOUT',
+  BLOG = 'BLOG',
+  THREADS = 'THREADS',
+}
+
+export interface IPage {
+  name: EPageName;
+  url: string;
+  description?: string;
 }
 
 export interface ITech {
   name: string;
   imageName: string;
-  color: ColorEnum;
+  color: EColor;
   description: string;
 }

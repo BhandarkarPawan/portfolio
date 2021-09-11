@@ -8,12 +8,10 @@ import TechStack from '../components/TechStack';
 
 const Home = () => {
   return (
-    <main className="bg-gray-50 ">
-      <Header />
+    <main>
       <Intro />
       <Projects />
       <TechStack />
-      <Footer />
     </main>
   );
 };

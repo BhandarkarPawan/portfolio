@@ -41,7 +41,7 @@ const Intro = () => {
         <div className="z-20 bubble floating-circle left-4 lg:w-96 lg:h-96 sm:w-72 sm:h-72 h-56 w-56 bg-gray-500"></div>
         <Image
           className="z-50"
-          src="/images/pawan-3.png"
+          src="/images/branding/pawan-2.png"
           alt="Pawan"
           width={700}
           height={700}

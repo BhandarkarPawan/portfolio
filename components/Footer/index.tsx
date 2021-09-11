@@ -14,7 +14,7 @@ const Footer = () => {
         h-10 w-full "
     >
       <Image
-        src="/images/logo.png"
+        src="/images/branding/logo.png"
         alt="TheProseCode"
         height={50}
         width={50}

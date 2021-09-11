@@ -9,13 +9,13 @@ const ProjectList: IProject[] = [
     name: 'Tipped',
     github: 'https://github.com/BhandarkarPawan/tip-calculator',
     website: 'https://tipped.netlify.app/',
-    imageName: 'Tipped.png',
+    imageName: 'projects/Tipped.png',
   },
   {
     name: 'Janken',
     github: 'https://github.com/BhandarkarPawan/rock-paper-scissors',
     website: 'https://janken-pawan.vercel.app',
-    imageName: 'Janken.png',
+    imageName: 'projects/Janken.png',
   },
 ];
 
@@ -29,7 +29,7 @@ const Projects = () => {
       </div>
       <div className="grid md:gap-24 md:grid-cols-2 mb-12">
         {ProjectList.map((project, index) => (
-          <HoverImage project={project} height={300} width={450} />
+          <HoverImage key={index} project={project} height={300} width={450} />
         ))}
       </div>
       <Bubble

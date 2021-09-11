@@ -1,10 +1,31 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Hamburger from '../Hamburger';
-import styles from './index.module.css';
+import NavTab from '../NavTab';
+import { EPageName, IPage } from '../../services/data-models';
+
+const Pages: IPage[] = [
+  {
+    name: EPageName.HOME,
+    url: '/',
+  },
+  {
+    name: EPageName.BLOG,
+    url: '/blog',
+  },
+  {
+    name: EPageName.THREADS,
+    url: '/threads',
+  },
+  {
+    name: EPageName.ABOUT,
+    url: '/about',
+  },
+];
 
 const Header = () => {
   const [navActive, setNavActive] = useState(true);
+  const [activePage, setActivePage] = useState<IPage>(Pages[0]);
 
   return (
     <div
@@ -29,7 +50,7 @@ const Header = () => {
             items-center"
         >
           <Image
-            src="/images/logo-2.png"
+            src="/images/branding/logo-2.png"
             alt="The Prose Code"
             width={72}
             height={36}
@@ -46,17 +67,26 @@ const Header = () => {
         className={`
           z-50
           ${navActive ? 'navPanelIn' : 'hidden'}  
-          md:flex 
-          w-1/2 
+          flex 
+          md:flex-row flex-col
+          md:w-1/2 w-full
           font-bold 
           md:mb-0 mb-12  
-          justify-around 
-          tracking-wide`}
+          md:justify-around 
+          items-start
+          tracking-wider`}
       >
-        <p className={styles.dropdownItem}>HOME</p>
-        <p className={styles.dropdownItem}>BLOG</p>
-        <p className={styles.dropdownItem}>THREADS</p>
-        <p className={styles.dropdownItem}>ABOUT</p>
+        {Pages.map((page) => {
+          console.log(`activePage?  ${activePage.name}`);
+          return (
+            <NavTab
+              key={page.name}
+              page={page}
+              active={activePage == page}
+              onClick={setActivePage}
+            />
+          );
+        })}
       </div>
     </div>
   );
