@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { EColor, ITech } from '../../services/data-models';
-import HoverTab from '../HoverTab';
+import HoverTab from '../../components/HoverTab';
 
 const TechList: ITech[] = [
   {

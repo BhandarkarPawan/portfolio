@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Bubble, { BubbleColor, BubbleSize } from '../Bubble';
+import Bubble, { BubbleColor, BubbleSize } from '../../components/Bubble';
 
 const Intro = () => {
   return (
