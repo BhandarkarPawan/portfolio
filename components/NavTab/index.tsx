@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './index.module.css';
-import { IPage } from '../../services/data-models';
+import { IPage } from '../../types/data-models';
 
 export interface Props {
   page: IPage;

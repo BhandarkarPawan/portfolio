@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Hamburger from '../Hamburger';
 import NavTab from '../NavTab';
-import { EPageName, IPage } from '../../services/data-models';
+import { EPageName, IPage } from '../../types/data-models';
 
 const Pages: IPage[] = [
   {
