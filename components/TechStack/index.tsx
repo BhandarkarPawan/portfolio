@@ -84,8 +84,8 @@ const TechStack = () => {
       />
       <Bubble
         color={BubbleColor.YELLOW}
-        size={BubbleSize.SMALL}
-        className="md:right-24 right-16 md:bottom-32 bottom-4"
+        size={BubbleSize.MEDIUM}
+        className="md:left-24 left-16 md:bottom-12 -bottom-4"
       />
       <Bubble
         color={BubbleColor.YELLOW}

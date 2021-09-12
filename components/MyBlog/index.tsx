@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const MyBlog = () => {
   return (
-    <div className="relative flex flex-col bg-white lg:px-32 items-center md:content-start p-8 ">
+    <div className="relative flex flex-col bg-white lg:px-32 py-16 items-center md:content-start p-8 ">
       <Title className="mt-4" bgColor={EColor.YELLOW} textColor={EColor.BLACK}>
         My Blog
       </Title>
