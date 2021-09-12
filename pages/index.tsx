@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Intro from '../sections/Intro';
-import Projects from '../sections/Projects ';
-import TechStack from '../sections/TechStack';
+import Intro from '../components/Intro';
+import Projects from '../components/Projects ';
+import TechStack from '../components/TechStack';
 
 const Home = () => {
   return (

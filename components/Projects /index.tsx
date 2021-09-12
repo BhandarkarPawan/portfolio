@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Bubble, { BubbleColor, BubbleSize } from '../../components/Bubble';
 import * as htmlToImage from 'html-to-image';
-import { HoverImage } from '../HoverImage';
+import { HoverImage } from '../../components/HoverImage';
 import { IProject } from '../../types/data-models';
 
 const ProjectList: IProject[] = [
