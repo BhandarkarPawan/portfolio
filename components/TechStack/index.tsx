@@ -80,10 +80,13 @@ const TechStack = () => {
         <Title
           className="md:mb-12 mb-8"
           bgColor={EColor.PINK}
-          text="Tech"
           textColor={EColor.WHITE}
-        />
-        <Title bgColor={EColor.PINK} text="Stack" textColor={EColor.WHITE} />
+        >
+          Tech
+        </Title>
+        <Title bgColor={EColor.PINK} textColor={EColor.WHITE}>
+          Stack
+        </Title>
       </div>
       <div className="md:w-3/4 w-full md:mx-24 mx-2 mt-12">
         <div className="md:flex grid grid-cols-3 place-items-center gap-6 justify-between  m-auto">

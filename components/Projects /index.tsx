@@ -26,9 +26,10 @@ const Projects = () => {
       <Title
         className="md:mb-12 mt-12 "
         bgColor={EColor.YELLOW}
-        text="My Projects"
         textColor={EColor.BLACK}
-      />
+      >
+        My Projects
+      </Title>
       <div className="grid md:gap-24 md:grid-cols-2 mb-12">
         {ProjectList.map((project, index) => (
           <HoverImage key={index} project={project} height={300} width={450} />

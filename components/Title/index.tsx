@@ -1,7 +1,6 @@
 import { EColor } from '../../types/data-models';
 
 export interface Props {
-  text: string;
   bgColor: EColor;
   textColor: EColor;
   className?: string;
@@ -36,7 +35,6 @@ const getTextColorClass = (color?: EColor) => {
 };
 
 const Title: React.FC<Props> = (props) => {
-  const text = props.text;
   const bgColor = props.bgColor;
   const textColor = props.textColor || EColor.BLACK;
   const className = props.className || '';
@@ -49,7 +47,7 @@ const Title: React.FC<Props> = (props) => {
       <h1
         className={`${textColorClass} z-50 title md:-translate-y-10 -translate-y-9`}
       >
-        {text}
+        {props.children}
       </h1>
     </div>
   );
