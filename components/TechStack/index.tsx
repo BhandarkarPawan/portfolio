@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { EColor, ITech } from '../../types/data-models';
+import Bubble, { BubbleColor, BubbleSize } from '../Bubble';
 import HoverTab from '../HoverTab';
 import Title from '../Title';
 
@@ -75,7 +76,22 @@ const TechStack = () => {
   const [activeTech, setActiveTech] = useState<ITech>(TechList[0]);
 
   return (
-    <div className="flex md:flex-row flex-col bg-black lg:px-32 items-center justify-center md:content-start p-8 ">
+    <div className="relative flex md:flex-row flex-col bg-black lg:px-32 items-center justify-center md:content-start p-8 ">
+      <Bubble
+        color={BubbleColor.YELLOW}
+        size={BubbleSize.SMALL}
+        className="md:left-8 left-8 top-8"
+      />
+      <Bubble
+        color={BubbleColor.YELLOW}
+        size={BubbleSize.SMALL}
+        className="md:right-24 right-16 md:bottom-32 bottom-4"
+      />
+      <Bubble
+        color={BubbleColor.YELLOW}
+        size={BubbleSize.MEDIUM}
+        className="md:right-8 right-4 top-24"
+      />
       <div className="flex md:w-1/4 flex-col items-start pt-4 md:pt-0">
         <Title
           className="md:mb-12 mb-8"
@@ -88,7 +104,7 @@ const TechStack = () => {
           Stack
         </Title>
       </div>
-      <div className="md:w-3/4 w-full md:mx-24 mx-2 mt-12">
+      <div className="z-50 md:w-3/4 w-full md:mx-24 mx-2 mt-12">
         <div className="md:flex grid grid-cols-3 place-items-center gap-6 justify-between  m-auto">
           {TechList.map((tech, index) => (
             <HoverTab
@@ -100,7 +116,7 @@ const TechStack = () => {
           ))}
         </div>
         {activeTech && (
-          <div>
+          <>
             <p
               className={`tracking-wider mt-4 font-bold md:text-4xl text-3xl ${getTitleColor(
                 activeTech.color
@@ -111,7 +127,7 @@ const TechStack = () => {
             <div className="pt-4 text-white h-48 subtitle">
               {activeTech.description}
             </div>
-          </div>
+          </>
         )}
       </div>
     </div>

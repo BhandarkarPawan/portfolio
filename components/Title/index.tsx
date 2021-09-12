@@ -4,6 +4,7 @@ export interface Props {
   bgColor: EColor;
   textColor: EColor;
   className?: string;
+  subtitle?: boolean;
 }
 
 const getbgColorClass = (color?: EColor) => {
@@ -42,10 +43,19 @@ const Title: React.FC<Props> = (props) => {
   const bgColorClass = getbgColorClass(bgColor);
   const textColorClass = getTextColorClass(textColor);
 
+  const fontClass = props.subtitle ? 'font-secondary' : '';
+  const textSizeClass = props.subtitle
+    ? 'md:text-4xl text-2xl font-bold'
+    : 'title';
+
+  const translateClass = props.subtitle
+    ? '-translate-y-4'
+    : 'md:-translate-y-10 -translate-y-9';
+
   return (
-    <div className={`${className} ${bgColorClass} md:h-8 h-5`}>
+    <div className={`z-50 ${className} ${bgColorClass}  md:h-8 h-5`}>
       <h1
-        className={`${textColorClass} z-50 title md:-translate-y-10 -translate-y-9`}
+        className={`${textColorClass} ${fontClass} ${textSizeClass} ${translateClass}`}
       >
         {props.children}
       </h1>
