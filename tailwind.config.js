@@ -5,14 +5,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        black: '#2F2F2F',
+        black: '#1F1F1F',
+        lightblue: '#E3E8F0',
       },
     },
   },
   variants: {
     extend: {
       opacity: ['hover'],
-      display: ['group-hover']
+      display: ['group-hover'],
     },
   },
   plugins: [],

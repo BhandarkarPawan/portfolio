@@ -21,7 +21,7 @@ const ProjectList: IProject[] = [
 
 const Projects = () => {
   return (
-    <div className="flex bg-gray-200 lg:px-24 md:px-8 flex-col items-center justify-center">
+    <div className="flex bg-lightblue lg:px-24 md:px-8 flex-col items-center justify-center">
       <div className="md:h-8 md:w-64 h-5 w-48 bg-yellow-300 md:mb-12 mt-12 ">
         <h1 className="z-50 title md:-translate-y-10 -translate-y-9">
           My Projects
