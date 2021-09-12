@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Bubble, { BubbleColor, BubbleSize } from '../Bubble';
+import Bubble, { BubbleColor, BubbleSize } from '../../components/Bubble';
 import * as htmlToImage from 'html-to-image';
 import { HoverImage } from '../HoverImage';
 import { IProject } from '../../types/data-models';

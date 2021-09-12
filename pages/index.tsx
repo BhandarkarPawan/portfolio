@@ -1,10 +1,7 @@
-import Header from '../components/Header';
-import Image from 'next/image';
 import React, { useState } from 'react';
-import Footer from '../components/Footer';
-import Intro from '../components/Intro';
-import Projects from '../components/Projects ';
-import TechStack from '../components/TechStack';
+import Intro from '../sections/Intro';
+import Projects from '../sections/Projects ';
+import TechStack from '../sections/TechStack';
 
 const Home = () => {
   return (
