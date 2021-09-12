@@ -11,7 +11,9 @@ export enum EColor {
   PINK = 'PINK',
   TEAL = 'TEAL',
   WHITE = 'WHITE',
+  BLACK = 'BLACK',
   ORANGE = 'ORANGE',
+  TRANSPARENT = 'TRANSPARENT',
 }
 
 export enum EPageName {

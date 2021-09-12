@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { EColor, ITech } from '../../types/data-models';
 import HoverTab from '../HoverTab';
+import Title from '../Title';
 
 const TechList: ITech[] = [
   {
@@ -75,17 +76,14 @@ const TechStack = () => {
 
   return (
     <div className="flex md:flex-row flex-col bg-black lg:px-32 items-center justify-center md:content-start p-8 ">
-      <div className="flex md:w-1/4  flex-col">
-        <div className="md:h-8 md:w-32 h-5 w-24 bg-pink-500 mt-12">
-          <h1 className="z-50 text-white title md:-translate-y-10 -translate-y-9">
-            Tech
-          </h1>
-        </div>
-        <div className="md:h-8 md:w-32 h-5 w-24 bg-pink-500 mt-8">
-          <h1 className="z-50 text-white title md:-translate-y-10 -translate-y-9">
-            Stack
-          </h1>
-        </div>
+      <div className="flex md:w-1/4 flex-col items-start pt-4 md:pt-0">
+        <Title
+          className="md:mb-12 mb-8"
+          bgColor={EColor.PINK}
+          text="Tech"
+          textColor={EColor.WHITE}
+        />
+        <Title bgColor={EColor.PINK} text="Stack" textColor={EColor.WHITE} />
       </div>
       <div className="md:w-3/4 w-full md:mx-24 mx-2 mt-12">
         <div className="md:flex grid grid-cols-3 place-items-center gap-6 justify-between  m-auto">
