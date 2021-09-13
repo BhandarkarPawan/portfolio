@@ -9,8 +9,10 @@ export interface Props {
 
 const getbgColorClass = (color?: EColor) => {
   switch (color) {
+    case EColor.TEAL:
+      return 'bg-blue-200';
     case EColor.BLUE:
-      return 'bg-blue-300';
+      return 'bg-blue-500';
     case EColor.YELLOW:
       return 'bg-yellow-300';
     case EColor.PINK:
@@ -53,7 +55,7 @@ const Title: React.FC<Props> = (props) => {
     : 'md:-translate-y-10 -translate-y-9';
 
   return (
-    <div className={`z-50 ${className} ${bgColorClass}  md:h-8 h-5`}>
+    <div className={`z-50 ${className} ${bgColorClass} px-2 md:h-8 h-5`}>
       <h1
         className={`${textColorClass} ${fontClass} ${textSizeClass} ${translateClass}`}
       >

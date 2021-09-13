@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
+import React from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,6 +10,8 @@ const Footer = () => {
       className="
         overflow-hidden 
         flex 
+      bg-black 
+      text-white
         justify-center items-center 
         h-10 w-full "
     >

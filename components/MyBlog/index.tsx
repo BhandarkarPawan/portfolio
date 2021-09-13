@@ -45,13 +45,13 @@ const MyBlog = () => {
         <div className="z-50 self-start md:mt-8 mt-6">
           <Title
             className="md:mb-8 mb-6"
-            bgColor={EColor.BLUE}
+            bgColor={EColor.TEAL}
             textColor={EColor.BLACK}
             subtitle
           >
             Stop coding in JavaScript!
           </Title>
-          <Title bgColor={EColor.BLUE} textColor={EColor.BLACK} subtitle>
+          <Title bgColor={EColor.TEAL} textColor={EColor.BLACK} subtitle>
             Use Typescript Instead!
           </Title>
         </div>
