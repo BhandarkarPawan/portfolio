@@ -1,8 +1,9 @@
+import Bubble, { BubbleColor, BubbleSize } from '../Bubble';
+
 import { EColor } from '../../types/data-models';
-import Title from '../Title';
 import Image from 'next/image';
-import Bubble, { BubbleSize, BubbleColor } from '../Bubble';
 import Link from 'next/link';
+import Title from '../Title';
 
 const MyBlog = () => {
   return (
@@ -30,7 +31,7 @@ const MyBlog = () => {
         size={BubbleSize.MEDIUM}
         className="md:right-8 right-12 md:bottom-12 bottom-4"
       />
-      <div className="relative flex flex-col md:w-2/3 items-center ">
+      <div className="relative flex flex-col  items-center ">
         <div className="bubble z-0 floating-circle hidden md:block h-56 w-56 -left-20 bg-gray-300"></div>
         <div className="mt-8 font-bold tracking-widest z-50 flex justify-between w-full">
           <p>AUG 08, 2021</p>
