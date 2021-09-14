@@ -25,7 +25,7 @@ const Intro = () => {
       <Bubble
         color={BubbleColor.BLUE}
         size={BubbleSize.MEDIUM}
-        className="md:right-48 right-72 md:bottom-16 md:top-24 top-16"
+        className="md:right-48 right-12 md:bottom-16 md:top-24 top-16"
       />
       <Bubble
         color={BubbleColor.PINK}
