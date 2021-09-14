@@ -18,8 +18,8 @@ const Intro = () => {
         className="md:right-40 right-4 md:top-72 bottom-24"
       />
       <Bubble
-        color={BubbleColor.PINK}
-        size={BubbleSize.MEDIUM}
+        color={BubbleColor.BLUE}
+        size={BubbleSize.SMALL}
         className="md:left-24 left-24 md:bottom-12"
       />
       <Bubble
@@ -48,17 +48,15 @@ const Intro = () => {
           GET IN TOUCH
         </a>
       </div>
-      <div className="relative flex mt-24 md:mt-0">
+      <div className="relative flex mt-24 mx-4 md:mt-0">
         <div className="z-20 bubble floating-circle left-4 lg:w-96 lg:h-96 sm:w-72 sm:h-72 h-48 w-48 bg-gray-500"></div>
-        <div className="mx-8">
-          <Image
-            className="z-50 "
-            src="/images/branding/pawan-2.png"
-            alt="Pawan"
-            width={700}
-            height={700}
-          />
-        </div>
+        <Image
+          className="z-50 "
+          src="/images/branding/pawan-2.png"
+          alt="Pawan"
+          width={700}
+          height={700}
+        />
       </div>
     </div>
   );

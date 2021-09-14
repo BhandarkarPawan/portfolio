@@ -1,8 +1,10 @@
-import Image from 'next/image';
-import Bubble, { BubbleColor, BubbleSize } from '../../components/Bubble';
 import * as htmlToImage from 'html-to-image';
-import { HoverImage } from '../../components/HoverImage';
+
+import Bubble, { BubbleColor, BubbleSize } from '../../components/Bubble';
 import { EColor, IProject } from '../../types/data-models';
+
+import { HoverImage } from '../../components/HoverImage';
+import Image from 'next/image';
 import Title from '../Title';
 
 const ProjectList: IProject[] = [
@@ -22,7 +24,7 @@ const ProjectList: IProject[] = [
 
 const Projects = () => {
   return (
-    <div className="flex bg-lightblue lg:px-24 md:px-8 flex-col items-center justify-center">
+    <div className="relative flex bg-lightblue lg:px-24 md:px-8 flex-col items-center justify-center">
       <Title
         className="md:mb-12 mt-12 "
         bgColor={EColor.YELLOW}
@@ -38,17 +40,17 @@ const Projects = () => {
       <Bubble
         color={BubbleColor.PINK}
         size={BubbleSize.SMALL}
-        className="md:left-56 left-12"
+        className="md:left-48 left-12 md:top-12"
       />
       <Bubble
         color={BubbleColor.BLUE}
         size={BubbleSize.MEDIUM}
-        className="md:right-24 right-12 -bottom-56"
+        className="md:right-24 right-12 top-40"
       />
       <Bubble
         color={BubbleColor.YELLOW}
         size={BubbleSize.SMALL}
-        className="md:right-56 right-12 -bottom-96"
+        className="md:right-56 right-12 bottom-12"
       />
     </div>
   );
