@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from 'next/link';
-import styles from './index.module.css';
 import { IPage } from '../../types/data-models';
+import Link from 'next/link';
+import React from 'react';
+import styles from './index.module.css';
 
 export interface Props {
   page: IPage;
@@ -22,7 +22,7 @@ const NavTab: React.FC<Props> = (props) => {
   return (
     <Link href={page.url}>
       <a
-        className={`${styles.navItem} ${className} ${selctedClass}`}
+        className={`${styles.navItem} ${className} ${selctedClass} hover:-translate-y-1`}
         onClick={handleClick}
       >
         {page.name}

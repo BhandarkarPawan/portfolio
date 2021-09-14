@@ -14,7 +14,10 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const ContactMe = () => {
   return (
-    <div className="flex flex-col bg-black lg:px-32 py-16 items-center md:content-start p-8 ">
+    <div
+      id="contact"
+      className="flex flex-col bg-black lg:px-32 py-16 items-center md:content-start p-8 "
+    >
       <Title bgColor={EColor.BLUE} textColor={EColor.WHITE}>
         Contact Me
       </Title>
@@ -41,37 +44,45 @@ const ContactMe = () => {
           </p> */}
           <div className="flex w-full text-3xl mt-4">
             <a href="https://www.linkedin.com/in/pawan-bhandarkar-b18370137/">
-              <FontAwesomeIcon icon={faLinkedin} color="white" />
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                color="white"
+                className="hover:scale-125"
+              />
             </a>
             <a href="https://github.com/BhandarkarPawan">
-              <FontAwesomeIcon icon={faGithub} color="white" className="ml-7" />
+              <FontAwesomeIcon
+                icon={faGithub}
+                color="white"
+                className="ml-7 hover:scale-125"
+              />
             </a>
             <a href="https://twitter.com/BhandarkarPawan">
               <FontAwesomeIcon
                 icon={faTwitter}
                 color="white"
-                className="ml-7"
+                className="ml-7 hover:scale-125"
               />
             </a>
             <a href="https://www.instagram.com/stable.stool/">
               <FontAwesomeIcon
                 icon={faInstagram}
                 color="white"
-                className="ml-7"
+                className="ml-7 hover:scale-125"
               />
             </a>
             <a href="https://codepen.io/BhandarkarPawan">
               <FontAwesomeIcon
                 icon={faCodepen}
                 color="white"
-                className="ml-7"
+                className="ml-7 hover:scale-125"
               />
             </a>
             <a href="mailto:pawankbhandarkar@gmail.com">
               <FontAwesomeIcon
                 icon={faEnvelope}
                 color="white"
-                className="ml-7"
+                className="ml-7 hover:scale-125"
               />
             </a>
           </div>
