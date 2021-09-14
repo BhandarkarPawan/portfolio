@@ -35,7 +35,7 @@ export const HoverImage: React.FC<Props> = (props) => {
       </div>
 
       <Image
-        className="rounded-xl"
+        className="rounded-xl h-full"
         src={src}
         height={height}
         width={width}

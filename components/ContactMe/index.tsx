@@ -36,9 +36,9 @@ const ContactMe = () => {
             You deserve a website that lives up to your vision. I will built it
             for you. Get in touch and take your Buisness Online!
           </p>
-          <p className="text-xl mt-8 text-blue-400 font-bold">
+          {/* <p className="text-xl mt-8 text-blue-400 font-bold">
             Available For Hire
-          </p>
+          </p> */}
           <div className="flex w-full text-3xl mt-4">
             <a href="https://www.linkedin.com/in/pawan-bhandarkar-b18370137/">
               <FontAwesomeIcon icon={faLinkedin} color="white" />
