@@ -47,7 +47,7 @@ const Title: React.FC<Props> = (props) => {
 
   const fontClass = props.subtitle ? 'font-secondary' : '';
   const textSizeClass = props.subtitle
-    ? 'md:text-4xl text-2xl font-bold'
+    ? 'md:text-4xl sm:text-2xl text-xl font-bold'
     : 'title';
 
   const translateClass = props.subtitle
