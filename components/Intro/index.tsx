@@ -15,22 +15,22 @@ const Intro = () => {
       <Bubble
         color={BubbleColor.YELLOW}
         size={BubbleSize.LARGE}
-        className="md:left-12 left-8 md:top-48 top-0"
+        className="md:right-40 right-4 md:top-72 bottom-24"
       />
       <Bubble
         color={BubbleColor.PINK}
-        size={BubbleSize.SMALL}
-        className="md:left-56 right-24 md:top-96 top-0"
+        size={BubbleSize.MEDIUM}
+        className="md:left-24 left-24 md:bottom-12"
       />
       <Bubble
         color={BubbleColor.BLUE}
         size={BubbleSize.MEDIUM}
-        className="md:left-12 right-8 md:bottom-16 md:top-auto top-16"
+        className="md:right-48 right-72 md:bottom-16 md:top-24 top-16"
       />
       <Bubble
         color={BubbleColor.PINK}
-        size={BubbleSize.MEDIUM}
-        className="md:right-24 right-24 md:bottom-32 top-40 
+        size={BubbleSize.SMALL}
+        className="md:right-24 right-24 md:bottom-96 bottom-56
         "
       />
       <div className="md:mt-0 mt-24 md:px-0 px-8 z-50 md:w-1/3 md:h-auto h-48 md:text-left text-center flex flex-col justify-center md:items-start items-center">
