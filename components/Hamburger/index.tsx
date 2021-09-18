@@ -13,7 +13,6 @@ const Hamburger: React.FC<Props> = (props) => {
   const { navActive, setNavActive } = props;
   return (
     <button
-      className="mr-2"
       onClick={(e) => {
         e.preventDefault();
         setNavActive(!navActive);

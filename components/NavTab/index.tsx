@@ -1,7 +1,6 @@
 import { IPage } from '../../types/data-models';
 import Link from 'next/link';
 import React from 'react';
-import styles from './index.module.css';
 
 export interface Props {
   page: IPage;
@@ -15,14 +14,23 @@ const NavTab: React.FC<Props> = (props) => {
   const active = props.active;
   const page = props.page;
 
-  const selctedClass = active ? 'border-black' : 'border-transparent';
+  const selctedClass = active ? 'border-white' : 'border-transparent';
 
   const handleClick = () => props.onClick(page);
 
   return (
     <Link href={page.url}>
       <a
-        className={`${styles.navItem} ${className} ${selctedClass} hover:-translate-y-1`}
+        className={`
+        md:text-xl 
+        text-2xl 
+        md:border-b-8
+        md:border-l-0
+        border-l-8
+        px-4 my-2
+        md:p-0 md:m-0
+        ${className} 
+        ${selctedClass}`}
         onClick={handleClick}
       >
         {page.name}
