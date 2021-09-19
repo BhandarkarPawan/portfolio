@@ -74,6 +74,7 @@
   @apply z-50 bg-black text-white font-secondary tracking-wide rounded-3xl text-2xl px-6 py-6 my-8;
   transition: all 0.2s ease-in-out;
 }
+
 .actionButton:hover {
   transform: scale(1.1);
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),

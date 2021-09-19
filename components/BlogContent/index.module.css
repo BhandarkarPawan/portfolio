@@ -1,0 +1,14 @@
+.blogContent {
+  @apply bg-pink-300 w-4/5;
+}
+
+.content {
+  @apply mt-8 w-auto;
+}
+
+.highlight {
+  @apply font-bold inline;
+  background: linear-gradient(to right, #d348a7 0%, #026ec5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

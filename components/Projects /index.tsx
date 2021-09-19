@@ -24,7 +24,7 @@ const ProjectList: IProject[] = [
 
 const Projects = () => {
   return (
-    <div className="relative flex bg-lightblue lg:px-24 md:px-8 flex-col items-center justify-center">
+    <div className="relative flex bg-white lg:px-24 md:px-8 flex-col items-center justify-center">
       <Title
         className="md:mb-12 mt-12 "
         bgColor={EColor.YELLOW}

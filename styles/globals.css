@@ -38,7 +38,7 @@ a {
   }
 
   .title {
-    @apply mt-4 md:text-5xl text-4xl;
+    @apply mt-4 lg:text-5xl text-3xl;
   }
 
   .subtitle {
