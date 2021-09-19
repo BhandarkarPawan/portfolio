@@ -1,13 +1,13 @@
 .header {
-  @apply p-4 md:flex w-full text-white bg-black;
+  @apply md:px-32 p-4 md:flex w-full text-white bg-black;
 }
 
 .headerLeft {
-  @apply md:flex md:w-1/2  justify-between items-center;
+  @apply md:flex md:w-3/5  justify-between items-center;
 }
 
 .title {
-  @apply md:ml-4 md:text-6xl sm:text-4xl text-3xl flex w-full md:mb-0 mb-8 justify-between;
+  @apply md:ml-4 lg:text-6xl sm:text-4xl text-3xl flex w-full md:mb-0 mb-8 justify-between;
 }
 
 .brand {
@@ -15,5 +15,11 @@
 }
 
 .navPanel {
-  @apply z-50 flex md:flex-row flex-col md:w-1/2 w-full font-bold  md:justify-around  md:items-center tracking-wider;
+  @apply z-50 flex md:flex-row flex-col md:w-2/5 w-full font-bold  md:justify-around  md:items-center tracking-wider;
+}
+
+.logo {
+  @apply py-4;
+  height: auto;
+  width: 120px;
 }

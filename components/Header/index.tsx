@@ -17,11 +17,10 @@ const Header = () => {
     <div className={styles.header}>
       <div className={styles.headerLeft}>
         <div className={styles.brand}>
-          <Image
+          <img
+            className={styles.logo}
             src="/images/branding/logo-2.png"
             alt={DISPLAY_TEXT.title}
-            width={309 * 0.4}
-            height={125 * 0.4}
           />
           <div className={styles.title}>
             <h1>{DISPLAY_TEXT.title}</h1>

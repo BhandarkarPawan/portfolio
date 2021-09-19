@@ -1,0 +1,86 @@
+.hero {
+  @apply md:flex justify-center relative overflow-hidden;
+}
+
+.circleYellow {
+  @apply z-50 absolute border-yellow-400 rounded-full;
+  border-width: 9px;
+  width: 52px;
+  height: 52px;
+  bottom: 9em;
+}
+
+.circleBlue {
+  @apply z-50 absolute border-blue-500  rounded-full;
+  border-width: 9px;
+  width: 38px;
+  height: 38px;
+  bottom: 5.2em;
+  left: 1.5em;
+}
+
+.circlePink {
+  @apply z-50 absolute border-pink-500  rounded-full;
+  border-width: 9px;
+  width: 28px;
+  height: 28px;
+  bottom: 7em;
+}
+
+.profileBubble {
+  @apply absolute rounded-full;
+  height: 22em;
+  width: 22em;
+  background: rgb(211, 72, 167);
+
+  background: linear-gradient(
+    45deg,
+    rgba(211, 72, 167, 1) 0%,
+    rgba(49, 120, 198, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+@screen md {
+  .circleYellow {
+    border-width: 16px;
+    width: 96px;
+    height: 96px;
+    bottom: 22.5em;
+  }
+
+  .circleBlue {
+    border-width: 12px;
+    width: 64px;
+    height: 64px;
+    bottom: 16.5em;
+    left: 3em;
+  }
+
+  .circlePink {
+    border-width: 10px;
+    width: 44px;
+    height: 44px;
+    bottom: 19em;
+  }
+
+  .profileBubble {
+    height: 42em;
+    width: 42em;
+  }
+}
+
+.actionButton {
+  @apply z-50 bg-black text-white font-secondary tracking-wide rounded-3xl text-2xl px-6 py-6 my-8;
+  transition: all 0.2s ease-in-out;
+}
+.actionButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.profileImage {
+  @apply z-50 self-center;
+}
