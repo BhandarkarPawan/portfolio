@@ -2,7 +2,9 @@ import { EColor } from '../../types/data-models';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Title from '../Title';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import styles from './index.module.css';
 
 const BlogNav = () => {
@@ -33,6 +35,24 @@ const BlogNav = () => {
           </div>
         </div>
       </div>
+
+      <div className="tracking-widest border-t-2 border-b-2 border-gray-400 mt-12 py-4 mx-8">
+        Have a Question about a Blog Post? Let’s connect!
+      </div>
+      <a
+        href="https://twitter.com/BhandarkarPawan"
+        className="flex items-center font-secondary mx-8 mt-8"
+      >
+        <FontAwesomeIcon icon={faTwitter} className="mr-3" />
+        <p>Questions and clarifications</p>
+      </a>
+      <a
+        href="mailto:pawankbhandarkar@gmail.com"
+        className="flex items-center  font-secondary mx-8 mt-4"
+      >
+        <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
+        <p>Feedback and suggestions</p>
+      </a>
     </aside>
   );
 };
