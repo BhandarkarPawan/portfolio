@@ -72,7 +72,6 @@
 
 .actionButton {
   @apply z-50 bg-black text-white  tracking-wide rounded-3xl text-2xl px-6 py-6 my-8;
-  @apply hoverCard;
 }
 
 .profileImage {

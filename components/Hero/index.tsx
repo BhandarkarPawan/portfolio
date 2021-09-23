@@ -23,7 +23,7 @@ const Hero = () => {
         <p className="z-50 font-secondary text-2xl font-bold mt-8">
           I will help you accelerate your growth & Take your business online.
         </p>
-        <a href="#contact" className={styles.actionButton}>
+        <a href="#contact" className={`hoverCard ${styles.actionButton}`}>
           GET IN TOUCH
         </a>
       </div>
