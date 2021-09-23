@@ -4,10 +4,18 @@ import { getPostBySlug, getAllPosts, Post } from '../../lib/api';
 import Head from 'next/head';
 import markdownToHtml from '../../lib/markdownToHtml';
 import PostBody from '../../components/PostBody';
+import React from 'react';
+import BlogContent from '../../components/BlogContent';
+import BlogNav from '../../components/BlogNav';
 
 export default function BlogPost(post: Post) {
   console.log(post);
-  return <PostBody {...post} />;
+  return (
+    <main className="md:flex bg-background w-full ">
+      <BlogNav />
+      <BlogContent {...post} />
+    </main>
+  );
 }
 
 export interface Props {

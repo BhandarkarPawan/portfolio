@@ -22,9 +22,7 @@ const BlogNav = () => {
         <input placeholder="Type Something" className={`${styles.search}`} />
       </span>
 
-      <div
-        className={`${styles.blogCard} rounded-2xl mt-12 flex flex-col bg-white p-8`}
-      >
+      <div className={`hoverCard rounded-2xl mt-12 flex flex-col bg-white p-8`}>
         <p className="font-bold">Stop Coding in Javascript!</p>
         <p className="font-bold">Use Typescript Instead</p>
         <p className="text-sm mt-2">AUG 08, 2021</p>
