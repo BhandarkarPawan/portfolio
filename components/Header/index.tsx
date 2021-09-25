@@ -1,9 +1,7 @@
-import { DISPLAY_TEXT, PAGES } from '../../types/constants';
 import React, { useState } from 'react';
-
-import Hamburger from '../Hamburger';
+import { DISPLAY_TEXT, PAGES } from '../../types/constants';
 import { IPage } from '../../types/data-models';
-import Image from 'next/image';
+import Hamburger from '../Hamburger';
 import NavTab from '../NavTab';
 import styles from './index.module.css';
 
@@ -11,7 +9,7 @@ const Header = () => {
   const [navActive, setNavActive] = useState(true);
   const [activePage, setActivePage] = useState<IPage>(PAGES[0]);
 
-  const activeClass = navActive ? 'navPanelIn' : 'hidden';
+  const activeClass = navActive;
 
   return (
     <div className={styles.header}>
@@ -28,18 +26,20 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={`${styles.navPanel} ${activeClass}`}>
-        {PAGES.map((page) => {
-          return (
-            <NavTab
-              key={page.name}
-              page={page}
-              active={activePage == page}
-              onClick={setActivePage}
-            />
-          );
-        })}
-      </div>
+      {navActive && (
+        <div className={`${styles.navPanel} ${activeClass}`}>
+          {PAGES.map((page) => {
+            return (
+              <NavTab
+                key={page.name}
+                page={page}
+                active={activePage == page}
+                onClick={setActivePage}
+              />
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 };
