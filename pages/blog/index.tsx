@@ -13,7 +13,7 @@ const BlogCard: React.FC<CardProps> = (props) => {
   const url = `/blog/${post.slug}`;
   return (
     <Link href={url}>
-      <div className="bg-white shadow-md  hoverCard  rounded-xl overflow-hidden">
+      <div className="bg-white shadow-lg  hoverCard  rounded-lg overflow-hidden">
         <div className="md:h-48 overflow-hidden">
           <img src={post.coverImage} />
         </div>
