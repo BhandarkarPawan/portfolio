@@ -17,8 +17,4 @@ export const PAGES: IPage[] = [
     name: EPageName.THREADS,
     url: '/threads',
   },
-  {
-    name: EPageName.ABOUT,
-    url: '/about',
-  },
 ];

@@ -36,7 +36,7 @@ const Blog = ({ posts }: Props) => {
   console.log(posts);
   // return <div></div>
   return (
-    <div className="bg-blue-100 flex items-center flex-col pt-8">
+    <div className="bg-blue-100 py-12 flex items-center flex-col ">
       <Title bgColor={EColor.YELLOW} textColor={EColor.BLACK}>
         My Blog
       </Title>
