@@ -40,7 +40,11 @@ const MyBlog = () => {
           </Link>
         </div>
         <div className="md:h-64 mt-4 h-36  overflow-hidden">
-          <Image src="/images/blog/TSvJS.jpeg" width={800} height={512}></Image>
+          <Image
+            src="/images/blog/typescript-v-javascript-cover.jpeg"
+            width={800}
+            height={512}
+          ></Image>
         </div>
         <div className="z-50 self-start md:mt-8 mt-6">
           <Title
