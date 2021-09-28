@@ -7,8 +7,8 @@ import { EColor } from '../lib/data-models';
 
 const Threads = () => {
   return (
-    <main className="px-8 flex bg-blue-100 flex-col items-center justify-center md:py-12 py-8 pt-4">
-      <Title bgColor={EColor.YELLOW} textColor={EColor.BLACK}>
+    <main className="md:px-8 px-4 flex bg-blue-100 flex-col items-center justify-center md:py-12 py-8 pt-4">
+      <Title className="mt-8" bgColor={EColor.YELLOW} textColor={EColor.BLACK}>
         Twitter Threads
       </Title>{' '}
       <p className="md:text-2xl text-center selection:text-xl mt-4 ">
