@@ -31,7 +31,7 @@ const MyBlog = () => {
         size={BubbleSize.MEDIUM}
         className="md:right-8 right-12 md:bottom-12 bottom-4"
       />
-      <div className="relative flex flex-col  items-center ">
+      <div className="relative md:w-2/3 flex flex-col  items-center ">
         <div className="bubble z-0 floating-circle hidden md:block h-56 w-56 -left-20 bg-gray-300"></div>
         <div className="mt-8 font-bold tracking-widest z-50 flex justify-between w-full">
           <p>AUG 08, 2021</p>
@@ -39,7 +39,7 @@ const MyBlog = () => {
             <a className="text-blue-500">SEE ALL</a>
           </Link>
         </div>
-        <div className="md:h-64 mt-4 h-36  overflow-hidden">
+        <div className="md:h-64 mt-4 h-36 overflow-hidden">
           <Image
             src="/images/blog/typescript-v-javascript-cover.jpeg"
             width={800}
@@ -47,17 +47,9 @@ const MyBlog = () => {
           ></Image>
         </div>
         <div className="z-50 self-start md:mt-8 mt-6">
-          <Title
-            className="md:mb-8 mb-6"
-            bgColor={EColor.TEAL}
-            textColor={EColor.BLACK}
-            subtitle
-          >
-            Stop coding in JavaScript!
-          </Title>
-          <Title bgColor={EColor.TEAL} textColor={EColor.BLACK} subtitle>
-            Use Typescript Instead!
-          </Title>
+        <h1 className="text-2xl md:text-5xl font-bold font-secondary">
+          Stop Coding In Javascript! Use Typescript Instead.
+        </h1>
         </div>
       </div>
     </div>

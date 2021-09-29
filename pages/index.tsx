@@ -8,7 +8,7 @@ import TechStack from '../components/TechStack';
 
 const Home = () => {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Hero />
       <Projects />
       <TechStack />
