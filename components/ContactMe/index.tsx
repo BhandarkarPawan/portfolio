@@ -36,8 +36,8 @@ const ContactMe = () => {
             </h1>
           </div>
           <p className="text-xl mt-8 text-white">
-            You deserve a website that lives up to your vision. I will built it
-            for you. Get in touch and take your Buisness Online!
+            You deserve a website that lives up to your vision. I will build it
+            for you. Get in touch and take your business online!
           </p>
           {/* <p className="text-xl mt-8 text-blue-400 font-bold">
             Available For Hire
